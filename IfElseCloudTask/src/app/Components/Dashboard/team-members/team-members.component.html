@@ -1,0 +1,47 @@
+<div class="team-container">
+    <h2 class="header">
+        Team members <span class="badge">100 users</span>
+    </h2>
+    <table class="team-table">
+        <thead>
+            <tr>
+                <th><input type="checkbox" /></th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Role</th>
+                <th>License use</th>
+                <th>Teams</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let member of teamMembers">
+                <td><input type="checkbox" /></td>
+                <td class="user-info">
+                    <img *ngIf="member.avatar" [src]="member.avatar" class="avatar" />
+                    <div>
+                        <div class="username">{{ member.name }}</div>
+                        <div class="userhandle">{{ member.username }}</div>
+                    </div>
+                </td>
+                <td>
+                    <span class="status" [ngClass]="member.status">{{ member.status }}</span>
+                </td>
+                <td>{{ member.role }}</td>
+                <td>
+                    <div class="progress-bar">
+                        <div class="fill" [style.width.%]="member.licenseUse"></div>
+                    </div>
+                    <span class="license-text">{{ member.licenseUse }}%</span>
+                </td>
+                <td>
+                    <span class="tag" *ngFor="let team of member.teams">{{ team }}</span>
+                </td>
+                <td>
+                    <button class="icon-btn">🗑️</button>
+                    <button class="icon-btn">✏️</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

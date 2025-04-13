@@ -1,14 +1,19 @@
 <div class="dashboard-layout">
     <app-sidebar></app-sidebar>
-
+  
     <div class="dashboard-content">
-        <h2 class="dashboard__welcome">Welcome back, Olivia</h2>
-
-        <div class="dashboard__grid">
-            <!-- <app-vendor-breakdown></app-vendor-breakdown>
-        <app-vendors-monitored></app-vendors-monitored> -->
+      <h2 class="dashboard__welcome">Welcome back, Olivia</h2>
+  
+      <div class="dashboard__grid">
+        <div class="chart-container">
+          <app-vendor-breakdown></app-vendor-breakdown>
         </div>
-
-        <!-- <app-team-members></app-team-members> -->
+  
+        <!-- Future second column component -->
+        <app-vendor-monitored></app-vendor-monitored>
+      </div>
+  
+      <app-team-members></app-team-members>
     </div>
-</div>
+  </div>
+  

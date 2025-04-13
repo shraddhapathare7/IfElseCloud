@@ -1,0 +1,105 @@
+$primary: #7c3aed;
+$secondary: #e5e7eb;
+$green: #10b981;
+$red: #ef4444;
+$gray: #9ca3af;
+
+.team-container {
+  padding: 1rem;
+
+  .header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    .badge {
+      background: #f3f4f6;
+      color: $primary;
+      padding: 0.25rem 0.5rem;
+      border-radius: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .team-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      text-align: left;
+      padding: 0.75rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+
+      .username {
+        font-weight: 600;
+      }
+
+      .userhandle {
+        font-size: 0.8rem;
+        color: $gray;
+      }
+    }
+
+    .status {
+      padding: 0.2rem 0.6rem;
+      border-radius: 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      display: inline-block;
+      &.Customer {
+        background-color: #ecfdf5;
+        color: $green;
+      }
+      &.Churned {
+        background-color: #fef2f2;
+        color: $red;
+      }
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: $secondary;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 0.25rem;
+
+      .fill {
+        height: 100%;
+        background-color: $primary;
+      }
+    }
+
+    .license-text {
+      font-size: 0.8rem;
+      color: $gray;
+    }
+
+    .tag {
+      background-color: #eef2ff;
+      color: $primary;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+      margin-right: 0.25rem;
+    }
+
+    .icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+  }
+}

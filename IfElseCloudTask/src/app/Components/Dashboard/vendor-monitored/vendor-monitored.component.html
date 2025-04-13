@@ -1,0 +1,40 @@
+<div class="vendor-monitored-card">
+    <div class="header">
+      <div class="title">Vendors monitored</div>
+      <div class="subtext">You're using 80% of available spots.</div>
+    </div>
+  
+    <circle-progress
+      [percent]="80"
+      [radius]="60"
+      [outerStrokeWidth]="10"
+      [outerStrokeColor]="'#7B61FF'"
+      [innerStrokeColor]="'#eee'"
+      [innerStrokeWidth]="10"
+      [showTitle]="false"
+      [showUnits]="false"
+      [showSubtitle]="false"
+      [animation]="true"
+      [responsive]="false"
+      [startFromZero]="false"
+      [renderOnClick]="false"
+      [showBackground]="false"
+      [clockwise]="false"
+      class="progress-chart"
+    >
+      <div class="chart-value">240</div>
+    </circle-progress>
+  
+    <div class="growth">
+      <span class="arrow">↑</span>
+      <span class="percentage">10%</span>
+    </div>
+  
+    <div class="message">
+      <strong>You’ve almost reached your limit</strong>
+      <p>You have used 80% of your available spots. Upgrade plan to monitor more vendors.</p>
+    </div>
+  
+    <button class="upgrade-btn">⚡ Upgrade plan</button>
+  </div>
+  
